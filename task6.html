@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard Structure</title>
+</head>
+<body>
+
+    <header>
+        <h1>Dashboard Control Panel</h1>
+        <form action="/search" method="get">
+            <label for="site-search">Search data:</label>
+            <input type="search" id="site-search" name="q" placeholder="Search for users">
+            <button type="submit">Search</button>
+        </form>
+    </header>
+
+    <hr> <nav>
+        <h2>Menu</h2>
+        
+        <h3>General Management</h3>
+        <ul>
+            <li><a href="#overview">Overview</a></li>
+            <li><a href="#statistics">Statistics</a></li>
+            <li><a href="#users">Users Management</a></li>
+        </ul>
+
+        <h3>Business Reports</h3>
+        <ul>
+            <li><a href="#sales">Sales Report</a></li>
+            <li><a href="#revenue">Revenue Analytics</a></li>
+            <li><a href="#settings">System Settings</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        
+        <section id="overview">
+            <h2>System Overview</h2>
+            
+            <article>
+                <h4>Total Users</h4>
+                <p>1,250 Active Users</p>
+            </article>
+
+            <article>
+                <h4>Monthly Sales</h4>
+                <p>$15,400.00</p>
+            </article>
+
+            <article>
+                <h4>Active Tasks</h4>
+                <p>24 Pending Tasks</p>
+            </article>
+        </section>
+
+        <hr>
+
+        <section id="transactions">
+            <h2>Latest Transactions</h2>
+            <table border="1"> <thead>
+                    <tr>
+                        <th>Transaction ID</th>
+                        <th>Customer Name</th>
+                        <th>Date</th>
+                        <th>Amount</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>#TRX-001</td>
+                        <td>Adel waleed</td>
+                        <td>2025-12-15</td>
+                        <td>$250.00</td>
+                        <td>Completed</td>
+                    </tr>
+                    <tr>
+                        <td>#TRX-002</td>
+                        <td>ahmed Mahmoud</td>
+                        <td>2025-12-16</td>
+                        <td>$120.00</td>
+                        <td>Pending</td>
+                    </tr>
+                    <tr>
+                        <td>#TRX-003</td>
+                        <td>Omar Ali</td>
+                        <td>2025-12-18</td>
+                        <td>$400.00</td>
+                        <td>Canceled</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+    </main>
+
+    <aside>
+        <h2>Recent Notifications</h2>
+        <ul>
+            <li><strong>System Update:</strong> Version 2.4 is now live.</li>
+            <li><strong>New Sign-up:</strong> User "Ali" just joined the platform.</li>
+            <li><strong>Security Alert:</strong> Unusual login attempt from IP 192.168.1.1.</li>
+        </ul>
+    </aside>
+
+    <hr>
+
+    <footer>
+        <p>&copy; 2025 Admin Dashboard Framework. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
