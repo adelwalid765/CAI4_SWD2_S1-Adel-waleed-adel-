@@ -31,7 +31,7 @@ body {
 h1 {
     margin-top: 30px;
     text-align: center;
-    font-size: 50px;
+    font-size: 45px;
 } 
 
 .search-container {
@@ -41,13 +41,17 @@ h1 {
     margin-right: 10px;
     margin-left: 200px;
 }
+.containerr {
+    display: flex;
+    gap: -5px;
+}
 
 .search-container input {
     width: 100%;
-    padding: 5px 5px 15px 40px;
+    padding: 10px 5px 15px 40px;
     background: #2a2a4a;
     border: none;
-    border-radius: 10px;
+    border-radius: 8px;
     color: white;
 
 }
@@ -74,10 +78,7 @@ h1 {
 .search-btn:hover{
     transform: translateY(50%);
 }
-.flex5 {
-    display: flex;
-    gap: -5px;
-}
+
 
 .layout-grid {
     display: flex; 
@@ -89,15 +90,12 @@ h1 {
 }
 
 .main-weather-card {
-    position: relative;
     background: linear-gradient(135deg, #4f5cff 0%, #6b7dff 100%);
     padding: 40px;
     border-radius: 15px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
     margin-bottom: 20px;
-    overflow: hidden;
 }
 
 .city-details {
@@ -136,10 +134,10 @@ h1 {
 }
 
 .stat-box {
+    flex: 1;
     background: #2a2a4a;
     padding: 20px;
     border-radius: 15px;
-    flex: 1;
     line-height: -100px;
 
 }
@@ -167,12 +165,10 @@ h1 {
     padding: 15px;
     border-radius: 15px;
     flex: 1;
-    text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 10px;
-    height: 100px;
 }
 
 .day-card span {
@@ -192,10 +188,7 @@ h1 {
 .sidebar-header {
     display: flex;
     justify-content: space-between;
-    align-items: center;
     margin-bottom: 15px;
-    padding-bottom: 12px;
-    border-bottom: 1px solid rgba(123, 21, 21, 0.1);
 }
 
 .sidebar-header span {
@@ -214,26 +207,8 @@ h1 {
 .hour-item {
     display: flex;
     justify-content: space-between;
-    align-items: center;
     padding: 10px;
     background: rgba(255, 255, 255, 0.05);
     border-radius: 10px;
     margin-bottom: 8px;
-    gap: 8px;
-}
-
-.hour-item span:first-child {
-    font-size: 16px;
-}
-
-.hour-item span:nth-child(2) {
-    flex: 1;
-    font-size: 12px;
-    color: #ffffff;
-}
-
-.hour-item span:last-child {
-    font-size: 12px;
-    color: #ffffff;
-    margin-left: auto;
 }
